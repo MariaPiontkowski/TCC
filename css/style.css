@@ -6,7 +6,16 @@ body {
 	padding-top: 51px;
 }
 
-.iconcolorblue {
+.body-dark{
+    background-image: url("../img/background-opacity-dark-dark.png");
+    background-repeat:repeat;
+}
+
+.form-registre{
+    color: #ffffff;
+}
+
+.iconcolorblue{
 	color:#10c5e5;
 }
 .iconcolorred {
@@ -111,4 +120,8 @@ body {
 }
 
 .panel{ border-color: black !important;}
+
+.form-group-top{
+    margin-top: 50px;
+}
 
