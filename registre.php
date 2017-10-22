@@ -1,40 +1,49 @@
 <html>
 
 <head>
-	<title>Cadastrando...</title>
+    <title>Cadastrando...</title>
 </head>
 
 <body>
-	<?php
-		require 'conexao.php';
+<?php
+require 'conexao.php';
 
-		if($_POST) {
-            $nascimento = $_POST['ano'] . '-' . $_POST['mes'] . '-' . $_POST['dia'];
-            $senha = sha1($_POST['senha']);
-            $altura = str_replace(',', '.', $_POST['altura']);
-
-            var_dump($_POST);
-            var_dump($altura);
-            var_dump($nascimento);
+if ($_POST) {
+    $nascimento = $_POST['ano'] . '-' . $_POST['mes'] . '-' . $_POST['dia'];
+    $senha = sha1($_POST['senha']);
+    $altura = str_replace(',', '.', $_POST['altura']);
+    $peso = str_replace(',', '.', $_POST['peso']);
 
 
-            /*$nome=$_POST['c_usuario'];
-            $email=$_POST['c_email'];
-            $senha=sha1($_POST['c_senha']);
-            $sql = mysql_query("INSERT INTO usuario(nome, email, senha, tp_usuario)
-                    VALUES('$nome', '$email', '$senha', '1')");
 
-                    header('location: index.php');*/
+    $sql = "CALL sp_in_usuario(
+                '".$_POST['nome']."',
+                '".$_POST['email']."',
+                '".$senha."',
+                ".$peso.",
+                ".$altura.",
+                '".$_POST['sexo']."',
+                '".$nascimento."',
+                '".ucfirst(strtolower($_POST['estado']))."',
+                '".ucfirst(strtolower($_POST['cidade']))."',
+                '".$_POST['volei']."',
+                '".$_POST['basquete']."',
+                '".$_POST['futebol']."'
+               );";
 
-            $sql_usuario = "INSERT INTO usuario VALUES(
-              NULL, 
-              " . $_POST['nome'] . ",
-              " . $_POST['email'] . ",
-              " . $senha . "
-              ) ";
-        }
+    mysql_query($sql);
 
-		
-	?>
+    session_start();
+
+    $_SESSION['email']=$_POST['email'];
+    $_SESSION['senha']=$_POST['senha'];
+    $_SESSION['autorizado'] = 1;
+
+    header('location: index.php');
+
+}
+
+
+?>
 </body>
 </html>
