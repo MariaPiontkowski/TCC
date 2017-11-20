@@ -1,4 +1,5 @@
 <?php
+include('./valida_login.php');
 include('./cabecalho_nav.php');
 ?>
 

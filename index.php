@@ -4,7 +4,7 @@
 ?>
 
 		<article>
-		
+
             <div class="container-fluid colorblue">
 				<div class="container">
 					<div class="row">
@@ -17,13 +17,13 @@
                             <a href="#"><i class="fa fa-facebook-square textwhite" style="font-size:50px !important; margin-right: 30px;"></i></a>
 						    <a href="#"><i class="fa fa-twitter-square textwhite" style="font-size:50px !important;"></i></a>
 						</p>
-						
+
 					</div>
 				</div>
 			</div>
-			
+
             <br/>
-			
+
             <div class="container">
                 <div class="row">
                   <div class="col-sm-6 col-md-4">
@@ -37,7 +37,7 @@
                       </div>
                     </div>
                   </div>
-				  
+
 				  <div class="col-sm-6 col-md-4">
                     <div class="thumbnail thumbnail-inverse container-sport">
                       <img src="img/futebollogo.png" alt="Futebol">
@@ -49,7 +49,7 @@
                       </div>
                     </div>
                   </div>
-				  
+
 				  <div class="col-sm-6 col-md-4">
                     <div class="thumbnail thumbnail-inverse container-sport">
                       <img src="img/basquetelogo.png" alt="Basquete">
@@ -65,32 +65,26 @@
             </div>
 		</article>
 
-        <?php
-
-        if(isset($_GET['logado'])){?>
-
-            <script type="application/javascript">
-
-                alert("Usuário logado com sucesso!");
-                window.location.href = "index.php";
-
-            </script>
-
-        <?php } ?>
+    <script type="application/javascript">
 
         <?php
+
+        if(isset($_GET['logado'])){
+
+            $message = $_GET['logado'] == 1 ? "Usuário logado com sucesso!" : "Favor, realizar login para acessar"; ?>
+            alert("<?php echo $message ?>");
+            window.location.href = "index.php";
+
+        <?php }
 
         if(isset($_GET['tcada'])){?>
 
-            <script type="application/javascript">
-
-                alert("Time cadastrado com sucesso!");
-                window.location.href = "index.php";
-
-            </script>
+            alert("Time cadastrado com sucesso!");
+            window.location.href = "index.php";
 
         <?php } ?>
-		
+    </script>
+
 <?php
 	Include  ('./rodape_assinatura.php');
 ?>
