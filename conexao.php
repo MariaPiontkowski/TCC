@@ -2,8 +2,11 @@
 	error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
 		$host = "localhost";
 		$user = "root";
-		$pass = "";
+		$pass = "root";
 		$banco = "sportteams";
-		$conexao = mysql_connect($host, $user, $pass) or die(mysql_error("Nao foi possivel conectar ao banco"));
-		mysql_select_db($banco) or die(mysql_error("Nao foi possivel conectar ao banco"));
-?>
+		$conexao = mysqli_connect($host, $user, $pass, $banco);
+
+        if (mysqli_connect_errno())
+        {
+            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        }

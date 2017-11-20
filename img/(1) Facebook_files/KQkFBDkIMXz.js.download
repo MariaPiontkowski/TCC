@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["9HV47"]); }
+
+__d("XMessengerDotComSponsoredMessagesXOutSubmitPageController",["XController"],(function a(b,c,d,e,f,g){f.exports=c("XController").create("/messenger/sponsored_message/xout/submit/",{ad_token:{type:"String",required:true},selected_option_type:{type:"String",required:true},event_type:{type:"String",required:true}})}),null);

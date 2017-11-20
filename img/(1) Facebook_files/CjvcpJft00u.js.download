@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["JbNe9"]); }
+
+__d("AdsFluxContainerProducers",["AdsProfilerPointProducer","AdsProfilerSyncIntervalProducer"],(function a(b,c,d,e,f,g){"use strict";var h=new(c("AdsProfilerSyncIntervalProducer"))("FLUX_CONTAINER_CALCULATE_STATE"),i=new(c("AdsProfilerPointProducer"))("FLUX_CONTAINER_DID_UPDATE"),j={didUpdate:i,calculateState:h};f.exports=j}),null);

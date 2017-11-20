@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["z9vHe"]); }
+
+__d("ReactComposerVisualPollGifUrlValidationState",[],(function a(b,c,d,e,f,g){f.exports={GIF_URL_VALIDATE_INIT:"GIF_URL_VALIDATE_INIT",GIF_URL_VALIDATING:"GIF_URL_VALIDATING",GIF_URL_VALID:"GIF_URL_VALID",GIF_URL_INVALID_URL:"GIF_URL_INVALID_URL",GIF_URL_INVALID_SIZE:"GIF_URL_INVALID_SIZE"}}),null);

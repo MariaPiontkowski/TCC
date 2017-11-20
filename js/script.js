@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
     var panels = $('.user-infos');
     var panelsButton = $('.dropdown-user');
     panels.hide();
@@ -31,4 +31,13 @@ $(document).ready(function() {
         e.preventDefault();
         alert("This is a demo.\n :-)");
     });
+}); */
+
+$(document).ready(function() {
+    $(".info_jogador").hide();
+    $(".jogador").click(function(){
+        $(".info_jogador").not($(this)).hide();
+        $(this).parent().find('.info_jogador').show(1000);
+    });
 });
+// if($(.info_jogador).display == '.show'){

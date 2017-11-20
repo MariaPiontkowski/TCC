@@ -5,6 +5,32 @@ body {
 	font-size:17px;
 	padding-top: 51px;
 }
+.div_info_margin{
+    margin-left: 130px;
+    float: none;
+}
+
+.jogador{
+    background-color: #101010;
+    height: 150px;
+    margin: 0px auto;
+    margin-top: 30px;
+    float: none !important;
+    color: #fff;
+    padding: 20px;
+}
+.info_jogador{
+    background-color: #222222;
+    height: 50px;
+    margin:0px auto !important;
+    float: none !important;
+    color: #fff;
+
+}
+
+.jogador h3{
+    margin: 0 0 20px 0;
+}
 
 .body-dark{
     background-image: url("../img/background-opacity-dark-dark.png");
@@ -15,7 +41,7 @@ body {
     color: #ffffff;
 }
 
-.container-sport:hover{
+.container-sport:hover, .jogador:hover{
     -ms-transform: scale(1.025); /* IE 9 */
     -webkit-transform: scale(1.025); /* Safari */
     transform: scale(1.025);
@@ -115,17 +141,17 @@ body {
 .table-user-information > tbody > tr > td {
     border-top: 0;
 }
-.toppad
-{margin-top:20px;
+.toppad {
+    margin-top:20px;
    
 }
 
 .panel-heading {
-    background-color: black !important;
+    background-color: #222222 !important;
     color: white !important;
 }
 
-.panel{ border-color: black !important;}
+.panel{ border-color: #222222 !important;}
 
 .form-group-top{
     margin-top: 50px;

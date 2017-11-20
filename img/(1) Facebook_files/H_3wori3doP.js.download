@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["NHLrr"]); }
+
+__d("XPagePostPhotoInpaintingController",["XController"],(function a(b,c,d,e,f,g){f.exports=c("XController").create("/pages/photo_inpainting/",{})}),null);

@@ -14,7 +14,7 @@ include('./cabecalho_cadastro.php');
 
     <script type="application/javascript">
 
-        $(function () {
+        $(document).ready(function () {
 
             $("#basquete").change(function () {
                 showHide('basquete')
@@ -92,7 +92,7 @@ include('./cabecalho_cadastro.php');
 
     <div class="row">
 
-        <form class="form-horizontal" method="POST" action="registre.php">
+        <form class="form-horizontal" method="POST" action="registre.php" enctype="multipart/form-data">
             <fieldset>
                 <div class="form-registre">
                     <div class="panel-body">
@@ -104,7 +104,7 @@ include('./cabecalho_cadastro.php');
                                 </div>
                             </div>
 
-                        </div>
+
                         <div class="form-group">
                             <div class="col-md-4 control-label">
                                 <h3>Informações da Conta</h3>
@@ -222,6 +222,12 @@ include('./cabecalho_cadastro.php');
 
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-md-7 col-md-offset-1">
+                            <label class="col-md-4 ">Selecione a foto de perfil</label>
+                                    <input type="file" name="pic" class="form-control input-md" accept="image/*">
+                            </div>
+                        </div>
 
 
                         <div class="form-group form-group-top">
@@ -298,8 +304,8 @@ include('./cabecalho_cadastro.php');
                             <div class="col-md-8">
                                 <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar
                                 </button>
-                                <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar
-                                </button>
+                                <a href="index.php"><button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar
+                                    </button></a>
                             </div>
                         </div>
 
@@ -312,7 +318,7 @@ include('./cabecalho_cadastro.php');
 
     </div>
 
-
+</div>
 </div>
 </body>
 </html>

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["DfqeO"]); }
+
+__d("SimpleNUXMessageEvents",[],(function a(b,c,d,e,f,g){f.exports=Object.freeze({MARK_AS_SEEN:"seen",USER_IS_ELIGIBLE:"eligible"})}),null);

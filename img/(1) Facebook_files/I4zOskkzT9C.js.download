@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["oti0N"]); }
+
+__d("AdsWhatsAppPlacementUtils",["AdsAccountCapabilities","AdsAccountUtils","AdsAPIObjectives","AdsPromotedObjectTypes"],(function a(b,c,d,e,f,g){"use strict";function h(i){return c("AdsAccountUtils").hasCapabilityFromList(i.capabilities,c("AdsAccountCapabilities").WHATSAPP_DESTINATION_ADS)&&i.objective===c("AdsAPIObjectives").MESSAGES&&i.promotedObjectType===c("AdsPromotedObjectTypes").WHATSAPP}f.exports={isIneligibleForMessagesObjectiveWhatsAppDestination:h}}),null);

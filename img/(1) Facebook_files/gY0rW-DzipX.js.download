@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["Irjf\/"]); }
+
+__d("GroupsActionURIConstants",[],(function a(b,c,d,e,f,g){f.exports=Object.freeze({CANCEL_JOIN_URI:"/ajax/groups/confirm_cancel_join_dialog.php",CLAIM_ADMINSHIP_URI:"/ajax/groups/membership/claim_adminship.php",CREATE_GROUP_URI:"/ajax/groups/create_get.php",JOIN_GROUP_URI:"/ajax/groups/membership/r2j.php",LEAVE_GROUP_URI:"/ajax/groups/membership/leave.php",REMOVE_MEMBER_URI:"/ajax/groups/members/remove.php"})}),null);

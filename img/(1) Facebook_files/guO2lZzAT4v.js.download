@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["quXB3"]); }
+
+__d("AdsLeadGenDynamicAdgroupSpecPathPlugin",["AdsAPIObjectives","AdsCallToActionTypes","AdsDefaultAdgroupSpecPathPlugin","AdsDynamicAdgroupSpecPathPluginCommon","AdsPromotedObjectTypes"],(function a(b,c,d,e,f,g){"use strict";var h=babelHelpers["extends"]({},c("AdsDefaultAdgroupSpecPathPlugin"),c("AdsDynamicAdgroupSpecPathPluginCommon"),{type:"adgroup/spec-path",key:"lead-generation/dynamic",pivots:{objective:c("AdsAPIObjectives").LEAD_GENERATION,promotedObjectType:c("AdsPromotedObjectTypes").PRODUCT_SET},getDefaultCallToActionType:function i(j){return c("AdsCallToActionTypes").TYPES.SIGN_UP.name}});f.exports=h}),null);
