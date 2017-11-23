@@ -2,7 +2,7 @@
 	error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
 		$host = "localhost";
 		$user = "root";
-		$pass = "root";
+		$pass = "";
 		$banco = "sportteams";
 		$conexao = mysqli_connect($host, $user, $pass, $banco);
 

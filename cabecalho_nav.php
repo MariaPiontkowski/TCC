@@ -12,9 +12,11 @@
         $senha = sha1($_SESSION['senha']);
 
 
-        $sqlNome = "SELECT nome FROM usuario WHERE email='$email' AND senha='$senha';";
+        $sqlNome = "SELECT * FROM usuario WHERE email='$email' AND senha='$senha';";
         $sqlResult = mysqli_query($conexao, $sqlNome);
         $usuarioNome = mysqli_fetch_assoc($sqlResult);
+        $_SESSION['id_usuario'] = $usuarioNome['id'];
+		$usuarioId = $usuarioNome['id'];
         $usuarioNome = $usuarioNome['nome'];
     }
 
