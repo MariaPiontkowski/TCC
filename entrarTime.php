@@ -9,12 +9,12 @@
 
         $resultado = mysqli_query($conexao, $verificar);
 
-        if(count($resultado) <= 0){
+        if($resultado->num_rows > 0){
             $sql = "INSERT INTO time_usuarios VALUES (NULL, '$usuarioId', '$idTime');";
             // mysqli_query($conexao, $sql);
             header('Location: times_volei.php?entrou=1');
         }else{
-            header: 'Location: times_volei.php?falha=1';
+            header('Location: times_volei.php?falha=1');
         }
 
     }

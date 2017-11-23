@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["hFNaA"]); }
-
-__d("AdsSelectorProducers",["AdsProfilerSyncIntervalProducer"],(function a(b,c,d,e,f,g){"use strict";var h=new(c("AdsProfilerSyncIntervalProducer"))("SELECTOR_INCLUSIVE"),i={selectorInclusive:h};f.exports=i}),null);

@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["RgvVE"]); }
-
-__d("AdsProfilerSpeedTrap",["AdsDispatcherProducers","AdsFluxContainerProducers","AdsSpeedCountAlarm","AdsSpeedIntervals","AdsSpeedTrap"],(function a(b,c,d,e,f,g){"use strict";var h=new(c("AdsSpeedCountAlarm"))({name:"page_load_container_did_update",interval:c("AdsSpeedIntervals").pageLoad,producer:c("AdsFluxContainerProducers").didUpdate}),i=new(c("AdsSpeedCountAlarm"))({name:"page_load_actions",interval:c("AdsSpeedIntervals").pageLoad,producer:c("AdsDispatcherProducers").dispatch});function j(){var l=new(c("AdsSpeedTrap"))([h,i]);h.start();i.start();l.start()}var k={start:j};f.exports=k}),null);

@@ -1,5 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["vosXY"]); }
-
-__d("PagesHovercardHeaderPinButton",["AsyncRequest","DOM"],(function a(b,c,d,e,f,g){"use strict";f.exports={init:function h(i,j,k,l){i.subscribe("change",function(m,n){var o=n.selected?"/ajax/bookmark/add/":"/ajax/bookmark/delete/",p=i.getRoot().firstChild;if(n.selected)c("DOM").replace(p,l);else c("DOM").replace(p,k);new(c("AsyncRequest"))().setMethod("POST").setURI(o).setData({id:j,reload_pagelet_navigation:true,ref:"admin_hovercard"}).send()})}}}),null);
-__d("HideInlineHelp",[],(function a(b,c,d,e,f,g){var h={},i={registerMenu:function j(k,l,m){h[k]=l.setValue.bind(l,m)},triggerUndo:function j(k){h[k]()}};f.exports=i}),null);
-__d("GuidedReviewConstants",[],(function a(b,c,d,e,f,g){f.exports=Object.freeze({DONE_OPTION_ID:"__done__"})}),null);

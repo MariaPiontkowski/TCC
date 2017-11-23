@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["2xOFR"]); }
-
-__d("AdsDispatcherProducers",["AdsProfilerSyncIntervalProducer"],(function a(b,c,d,e,f,g){"use strict";var h=new(c("AdsProfilerSyncIntervalProducer"))("ACTION_DISPATCH"),i={dispatch:h};f.exports=i}),null);

@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["Po3\/Y"]); }
-
-__d("AdsSpeedCountAlarm",["AdsProfilerEntities","AdsSpeedAlarm"],(function a(b,c,d,e,f,g){"use strict";var h,i,j=c("AdsProfilerEntities").AdsProfilerProducer;h=babelHelpers.inherits(k,c("AdsSpeedAlarm"));i=h&&h.prototype;function k(l){i.constructor.call(this,babelHelpers["extends"]({},l,{getInitialState:function m(){return 0},reduce:function m(n,o){return n+1},send:function m(n){return n}}))}f.exports=k}),null);

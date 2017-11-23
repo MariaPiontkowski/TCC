@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["8OsH8"]); }
-
-__d("PhotoInpaintingStatus",[],(function a(b,c,d,e,f,g){f.exports=Object.freeze({TOO_MUCH_TEXT:"TOO_MUCH_TEXT",REMOVING_TEXT:"REMOVING_TEXT",TEXT_OK:"TEXT_OK",UPLOADING_IMAGE:"UPLOADING_IMAGE",USING_UPLOADED_IMAGE:"USING_UPLOADED_IMAGE"})}),null);

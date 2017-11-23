@@ -1,4 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["ZXdBr"]); }
-
-__d("ReactComposerMediaAttachmentBootstrapper",["ReactComposerMediaAttachmentActions","ReactComposerStatusActions","ReactComposerTaggerActions"],(function a(b,c,d,e,f,g){var h={bootstrap:function i(j,k){c("ReactComposerTaggerActions").updateTaggersSource(j,k.taggersSource);c("ReactComposerStatusActions").setMentionsSource(j,k.mentionsSource);c("ReactComposerMediaAttachmentActions").setConfig(j,k)}};f.exports=h}),null);
-__d("ReactComposerStatusAttachmentBootstrapper",["ReactComposerStatusActions","ReactComposerTaggerActions"],(function a(b,c,d,e,f,g){var h={bootstrap:function i(j,k){c("ReactComposerTaggerActions").updateTaggersSource(j,k.taggersSource);c("ReactComposerStatusActions").setMentionsSource(j,k.mentionsSource);if(k.typeaheadReporter)c("ReactComposerStatusActions").setTypeaheadReporter(j,k.typeaheadReporter)}};f.exports=h}),null);

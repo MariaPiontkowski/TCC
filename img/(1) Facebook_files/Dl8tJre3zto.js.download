@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["sW\/Hr"]); }
-
-__d("PhotoInpaintingHeader.react",["cx","fbt","LeftRight.react","React","XUICloseButton.react"],(function a(b,c,d,e,f,g,h,i){"use strict";var j,k,l=c("React").PropTypes,m=c("React").PureComponent;j=babelHelpers.inherits(n,m);k=j&&j.prototype;n.prototype.render=function(){return c("React").createElement("div",{className:"_29uy _2pi0"},c("React").createElement(c("LeftRight.react"),null,c("React").createElement("div",{className:"_29uz"},i._("Edit Image")),c("React").createElement("div",{className:"_29ux"},c("React").createElement(c("XUICloseButton.react"),{onClick:this.props.onXOut,small:"medium"}))))};function n(){j.apply(this,arguments)}n.propTypes={onXOut:l.func};f.exports=n}),null);
